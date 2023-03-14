@@ -1,7 +1,3 @@
-git clone https://github.com/hilcrhymer78787/todo.git
-
-
-
 【フロントエンド】
 
 cd todo/vue
