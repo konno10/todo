@@ -10,7 +10,7 @@
     <v-card-text class="pa-0">
       <Loading v-if="isLoading" />
       <p v-else-if="$store.state.tags === null">通信エラー</p>
-      <p v-else-if="!$store.state.tags">データはありません</p>
+      <p v-else-if="!$store.state.tags.length">データはありません</p>
       <v-simple-table v-else>
         <thead>
           <tr>

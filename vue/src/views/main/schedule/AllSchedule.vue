@@ -6,7 +6,7 @@
       <v-card-text class="pa-0">
         <Loading v-if="isLoading" />
         <p v-else-if="taskData.tasks === null">通信エラー</p>
-        <p v-else-if="!taskData.tasks">データはありません</p>
+        <p v-else-if="!taskData.tasks.length">データはありません</p>
         <div class="px-4 pt-4" v-else>
           <section>
             <ul class="mb-3">

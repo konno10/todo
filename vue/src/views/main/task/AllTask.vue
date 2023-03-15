@@ -74,7 +74,7 @@
         <TaskList :tasks="taskData.tasks" />
         <Loading v-if="isLoading" />
         <p v-else-if="taskData.tasks === null">通信エラー</p>
-        <p v-else-if="!taskData.tasks">データはありません</p>
+        <p v-else-if="!taskData.tasks.length">データはありません</p>
       </div>
     </v-card-text>
   </v-card>

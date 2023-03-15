@@ -10,6 +10,7 @@
       </v-card-title>
       <Loading v-if="isLoading" />
       <p v-else-if="showUsers === null">通信エラー</p>
+      <p v-else-if="!$store.state.users.length">データはありません</p>
       <v-card-text class="pa-0" v-else>
         <div class="pt-4 px-4 pb-2">
           <v-form class="d-flex">
